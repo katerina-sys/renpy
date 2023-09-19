@@ -1,0 +1,15 @@
+# замена background с анимацией
+image backgrounds:
+    "bg forest.jpg" with Dissolve(0.5)
+    pause 0.3
+    "bg forest2.jpg" with Dissolve(0.5)
+
+# после label_start:
+#anim_d and anim_e + backgrounds
+    show backgrounds
+    show anim_d
+    pause
+    hide anim_d
+    show anim_e
+    pause
+    hide anim_e
