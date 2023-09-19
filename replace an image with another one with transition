@@ -1,0 +1,26 @@
+# заменить изображение другим с переходом
+image anim_d:
+    animation
+    "holy2.png"
+    xalign 0.0
+    linear 2.0 xalign 1.0
+    repeat 2
+
+image anim_e:
+    animation
+    "holy4.png"
+    xalign 1.0
+    linear 1.0 xalign 0.5
+    repeat 2
+# после label_start:
+# anim_d and anim_e
+    show anim_d
+    pause
+    hide anim_d
+    show anim_e
+    pause
+    hide anim_e
+# image - указывает, что это анимационный блок, содержащий изображения
+# создаем два блока с разными анимациями передвижения спрайта персонажа( то есть anim_d и anim_e )
+# после объявляем после label_start:
+# показываем, пауза, скрываем
